@@ -1,0 +1,106 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    background-color: hsl(217, 54%, 11%);
+}
+.container .card{
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: hsl(216, 50%, 16%);
+}
+.container .card .img{
+    position: relative;
+}
+.container .card .img img{
+    border-radius: 10px;
+}
+.container .card .img svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.3s;
+}
+.container .card .img .overlay{
+    top: 0;
+    position: absolute;
+    left: 0;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: #03fff85c;
+    transition: 0.3s;
+    opacity: 0;
+}
+.container .card .img .overlay:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.container .card .img .overlay:hover svg{
+    opacity: 1;
+    cursor: pointer;
+}
+.container .card .body h2{
+    color: hsl(0, 0%, 100%);
+    transition: 0.3s;
+}
+.container .card .body h2:hover{
+    color: #03fff8;
+cursor: pointer;
+}
+.container .card .body p{
+    color: hsl(215deg 38.22% 60.05%);
+}
+.container .card .likes{
+    display: flex;
+    justify-content: space-between;
+}
+.container .card .likes .p-one p{
+    color: #03fff8;
+}
+.container .card .likes .p-two p{
+    color: hsl(215deg 38.22% 60.05%);
+}
+.container .card .footer{
+    display: flex;
+    border-top: 1px solid hsl(215deg 38.22% 60.05%);
+}
+.container .card .footer img{
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    bottom: -50%;
+    transform: translateY(50%);
+    position: relative;
+    margin-right: 10px;
+}
+.container .card .footer p{
+    color: hsl(215deg 38.22% 60.05%);
+}
+.container .card .footer p span{
+    color: hsl(0, 0%, 100%);
+    padding-left: 5px;
+    transition: 0.3s;
+}
+.container .card .footer p span:hover{
+    color: #03fff8;
+    cursor: pointer;
+}
